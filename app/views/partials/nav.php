@@ -2,8 +2,8 @@
     <div class="nav-wrapper">
         <div class="container">
             <div class="nav">
-                <a href="#" class="logo">
-                    <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                <a href="../controller/homepage.php" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Flix<span class="main-color">N</span>Chll
                 </a>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#">Home</a></li>

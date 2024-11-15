@@ -693,6 +693,11 @@ footer .content {
   text-align: center;
 }
 
+video {
+  width: 100%;
+  height: 600;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1280px) {
