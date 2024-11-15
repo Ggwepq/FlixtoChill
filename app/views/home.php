@@ -18,7 +18,7 @@
     <!-- APP CSS -->
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="../views/css/home.css">
+    <link rel="stylesheet" href="app/views/css/home.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                                     <?= getDescription($popular_movie_id) ?>
                             </div>
                             <div class="item-action top-down delay-6">
-                                    <a href="player.php?id=<?= $popular_movie_id ?>" class="btn btn-hover">
+                                    <a href="app/controller/player.php?id=<?= $popular_movie_id ?>" class="btn btn-hover">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Watch now</span>
                                 </a>
@@ -74,7 +74,7 @@
                 <!-- MOVIE ITEM -->
             <?php foreach ($topRated as $top):
                 $top_movie_id = $top->getID(); ?>
-            <a href="player.php?id=<?= $top_movie_id ?>">
+            <a href="app/controller/player.php?id=<?= $top_movie_id ?>">
                 <div class="movie-item">
                     <img src="https:<?= getImageUrl($top_movie_id, 0) ?>" alt="">
                     <div class="movie-item-content">

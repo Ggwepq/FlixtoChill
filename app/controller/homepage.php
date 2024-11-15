@@ -4,12 +4,12 @@ use Tmdb\Helper\ImageHelper;
 use Tmdb\Repository\ConfigurationRepository;
 use Tmdb\Repository\MovieRepository;
 
-require_once '../../vendor/autoload.php';
-require_once '../apiconfig.php';
-require_once '../functions.php';
+require_once 'vendor/autoload.php';
+require_once 'app/apiconfig.php';
+require_once 'app/functions.php';
 
 /** @var Tmdb\Client $client */
-$client = require_once ('../tmdb-setup.php');
+$client = require_once ('app/tmdb-setup.php');
 $configRepository = new ConfigurationRepository($client);
 $config = $configRepository->load();
 
@@ -52,4 +52,4 @@ function getImageUrl($movie_id, $type = 0): string
     return $imageHelper->getUrl($backdrop);
 }
 
-require '../views/home.php';
+require 'app/views/home.php';
